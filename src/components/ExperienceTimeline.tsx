@@ -32,7 +32,6 @@ const experiences = [
     },
     {
         title: "Various Customer Service Roles",
-        company: "Various Companies",
         date: "2016 - 2022",
         description: [
             "Demonstrated strong communication and interpersonal skills in diverse customer service settings.",
