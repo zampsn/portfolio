@@ -88,7 +88,9 @@ const ExperienceTimeline = () => {
                                             </p>
                                             <h3 className="text-lg font-semibold text-gray-100">
                                                 {exp.title}
-                                                <span className="text-gray-400"> · {exp.company}</span>
+                                                {exp.company && (
+                                                    <span className="text-gray-400"> · {exp.company}</span>
+                                                )}
                                             </h3>
                                             {exp.team && (
                                                 <p className="text-gray-500 text-sm mt-1">{exp.team}</p>

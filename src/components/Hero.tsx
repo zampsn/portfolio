@@ -49,23 +49,21 @@ const Hero = () => {
                 <p className="absolute bottom-8 text-gray-400 text-sm font-mono">
                     <TypeAnimation
                         sequence={[
-                            "// Making software great again", 2000,
-                            "// Securing all the things", 2000,
-                            "// This is fine 🔥 (production on fire)", 2000,
-                            "// Pushing to prod on a Friday", 2000,
-                            "// Hunting IAM misconfigurations", 2000,
-                            "// Fighting entropy one commit at a time", 2000,
-                            "// Automating your job", 2000,
-                            "// Testing in production (please don't tell)", 2000,
-                            "// Mitigating supply chain risks", 2000,
-                            "// Stealing your IP address... just kidding 😜", 2000,
-                            "// Automating all the things", 2000,
-                            "// Who broke the build? 🧐", 2000,
-                            "// More coffee less vulnerabilities", 2000,
+                            '// Automating all the things', 2000,
+                            '// Reducing risk through automation', 2000,
+                            '// Securing all the things', 2000,
+                            '// sudo rm -rf /', 2000,
+                            '// Securing infrastructure from the ground up', 2000,
+                            '// Hunting IAM misconfigurations', 2000,
+                            '// Bridging the gap between security and development', 2000,
+                            '// Automating your job', 2000,
+                            '// Stealing your IP address... just kidding 😜', 2000,
+                            '// Building trust with end-to-end security solutions', 2000,
+                            '// Who broke the build? 🧐', 2000,
+                            '// Empowering teams with security-focused development', 2000,
                         ]}
                         wrapper="span"
                         speed={50}
-                        preRenderFirstString={true}
                         deletionSpeed={75}
                         repeat={Infinity}
                         cursor={true}
