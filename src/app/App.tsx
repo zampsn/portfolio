@@ -1,6 +1,6 @@
 import Hero from "../components/Hero.tsx";
 import ExperienceTimeline from "../components/ExperienceTimeline.tsx";
-// import Placeholder from "../components/Placeholder.tsx"
+import Placeholder from "../components/Placeholder.tsx"
 import GeometricCanvas from "../components/GeometricCanvas.tsx";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
             <GeometricCanvas>
                 <Hero/>
                 <ExperienceTimeline/>
-                {/*<Placeholder/>*/}
+                <Placeholder/>
             </GeometricCanvas>
         </>
     )
