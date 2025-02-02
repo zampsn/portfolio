@@ -22,7 +22,7 @@ const HomeButton = () => {
             to="home"
             smooth={true}
             duration={500}
-            className={`fixed right-4 bottom-4 z-20 bg-gray-900/80 backdrop-blur-md py-4 px-4 rounded-[20px] border border-gray-700/50 shadow-lg text-gray-200 hover:text-green-400 transition-all cursor-pointer ${
+            className={`fixed right-4 bottom-4 z-20 bg-gray-900/80 backdrop-blur-md py-4 px-4 rounded-[20px] border border-gray-700/50 shadow-lg text-gray-200 hover:text-blue-400 transition-all cursor-pointer ${
                 isAtBottom ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
         >
