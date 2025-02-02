@@ -4,7 +4,7 @@ const SKILLS = ['Kubernetes', 'Cloud Infrastructure', 'CI/CD Systems', 'Cybersec
 
 const AboutSection = () => {
     return (
-        <section className="relative py-16 md:py-24 bg-zinc-950/10 backdrop-blur-sm overflow-hidden" id="about">
+        <section className="relative py-16 md:py-24 bg-transparent backdrop-blur-sm overflow-hidden" id="about">
             <div className="container mx-auto px-6 sm:px-8 lg:px-10">
                 <motion.h2
                     initial={{opacity: 0, y: 20}}

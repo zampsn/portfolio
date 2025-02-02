@@ -45,7 +45,7 @@ const experiences = [
 
 const ExperienceTimeline = () => {
     return (
-        <section className="relative py-12 md:py-20 bg-zinc-950/10 backdrop-blur-lg overflow-hidden" id="experience">
+        <section className="relative py-12 md:py-20 transparnet backdrop-blur-sm overflow-hidden" id="experience">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
                     initial={{opacity: 0, y: 20}}
