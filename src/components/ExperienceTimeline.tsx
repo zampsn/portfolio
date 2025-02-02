@@ -56,7 +56,7 @@ const ExperienceTimeline = () => {
                     Professional Journey
                 </motion.h2>
 
-                <div className="relative max-w-3xl mx-auto">
+                <div className="relative max-w-4xl mx-auto">
                     {/* Vertical timeline line */}
                     <div
                         className="hidden md:block absolute left-0 w-1 bg-gradient-to-b from-gray-600/30 to-transparent h-full"
@@ -73,9 +73,10 @@ const ExperienceTimeline = () => {
                             >
                                 {/* Timeline icon */}
                                 <div
-                                    className="absolute left-0 -translate-x-1/2 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 border-2 border-gray-700/50 shadow-lg text-gray-200">
+                                    className="absolute left-1/2 -translate-x-1/2 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 border-2 border-gray-700/50 shadow-lg text-gray-200 md:left-0 md:-translate-x-1/2">
                                     {React.cloneElement(exp.icon, {className: "w-5 h-5"})}
                                 </div>
+
 
                                 {/* Card content */}
                                 <div className="relative md:ml-14 pt-14 md:pt-0 w-full">

@@ -1,6 +1,6 @@
 const Placeholder = () => {
     return (
-        <div className="h-[25vh] bg-gray-950"></div>
+        <div className="h-[15vh] bg-gray-950"></div>
     )
 }
 
