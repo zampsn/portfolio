@@ -10,7 +10,7 @@ const AboutSection = () => {
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
-                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-green-400"
+                    className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-10 md:mb-16 text-blue-400"
                 >
                     Security-Oriented Developer
                 </motion.h2>
@@ -39,7 +39,7 @@ const AboutSection = () => {
                                 transition={{delay: 0.2}}
                                 className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-800/50"
                             >
-                                <h3 className="text-green-400/80 font-mono mb-3 sm:mb-4 text-base sm:text-lg">Core
+                                <h3 className="text-blue-400/80 font-mono mb-3 sm:mb-4 text-base sm:text-lg">Core
                                     Competencies</h3>
                                 <div className="flex flex-wrap gap-2 sm:gap-3">
                                     {SKILLS.map((skill, i) => (

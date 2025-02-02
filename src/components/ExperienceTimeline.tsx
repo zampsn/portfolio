@@ -51,7 +51,7 @@ const ExperienceTimeline = () => {
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
-                    className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-green-400"
+                    className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-blue-400"
                 >
                     Professional Journey
                 </motion.h2>
@@ -84,7 +84,7 @@ const ExperienceTimeline = () => {
                                         className="p-6 bg-gray-900/30 backdrop-blur-sm rounded-xl border border-gray-800/50 shadow-xl hover:border-gray-700/80 transition-all">
                                         {/* Header */}
                                         <div className="mb-4">
-                                            <p className="text-green-400/80 font-mono text-xs mb-1">
+                                            <p className="text-blue-400/80 font-mono text-xs mb-1">
                                                 {exp.date}
                                             </p>
                                             <h3 className="text-lg font-semibold text-gray-100">
@@ -102,7 +102,7 @@ const ExperienceTimeline = () => {
                                             {exp.description.map((item, i) => (
                                                 <li key={i} className="relative pl-4">
                                                     <div
-                                                        className="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-green-400/30"/>
+                                                        className="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-blue-400/30"/>
                                                     {item}
                                                 </li>
                                             ))}

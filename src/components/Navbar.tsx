@@ -32,7 +32,7 @@ const Navbar = () => {
                     to="home"
                     smooth={true}
                     duration={500}
-                    className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
+                    className="flex items-center space-x-2 text-gray-200 hover:text-blue-400 transition cursor-pointer"
                 >
                     <House/>
                     <span className="hidden md:inline">Home</span>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     to="about"
                     smooth={true}
                     duration={500}
-                    className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
+                    className="flex items-center space-x-2 text-gray-200 hover:text-blue-400 transition cursor-pointer"
                 >
                     <User/>
                     <span className="hidden md:inline">About</span>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     to="experience"
                     smooth={true}
                     duration={500}
-                    className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
+                    className="flex items-center space-x-2 text-gray-200 hover:text-blue-400 transition cursor-pointer"
                 >
                     <BriefcaseBusiness/>
                     <span className="hidden md:inline">Experience</span>

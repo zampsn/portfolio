@@ -11,7 +11,7 @@ const Hero = () => {
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{delay: 0.2}}
-                        className="text-5xl md:text-6xl font-bold bg-gradient-to-r bg-gradient-to-r from-green-500 to-green-800 bg-clip-text text-transparent mb-4"
+                        className="text-5xl md:text-6xl font-bold bg-gradient-to-r bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text text-transparent mb-4"
                     >
                         Zach Sampson
                     </motion.h1>
@@ -33,15 +33,15 @@ const Hero = () => {
                     >
                         <a href="https://github.com/zampsn" target="_blank" rel="noopener noreferrer"
                            className="p-3 bg-zinc-800 hover:bg-zinc-800/80 rounded-lg transition-all duration-300 group">
-                            <Github className="w-6 h-6 text-gray-300 group-hover:text-green-400 transition-colors"/>
+                            <Github className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors"/>
                         </a>
                         <a href="https://linkedin.com/in/zsampson" target="_blank" rel="noopener noreferrer"
                            className="p-3 bg-zinc-800 hover:bg-zinc-800/80 rounded-lg transition-all duration-300 group">
-                            <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-green-400 transition-colors"/>
+                            <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors"/>
                         </a>
                         <a href="mailto:sampsonzx03@gmail.com"
                            className="p-3 bg-zinc-800 hover:bg-zinc-800/80 rounded-lg transition-all duration-300 group">
-                            <Mail className="w-6 h-6 text-gray-300 group-hover:text-green-400 transition-colors"/>
+                            <Mail className="w-6 h-6 text-gray-300 group-hover:text-blue-400 transition-colors"/>
                         </a>
                     </motion.div>
                 </div>
