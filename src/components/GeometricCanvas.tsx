@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import {useEffect, useRef} from "react";
 
 const BG_COLOR = "rgba(10, 10, 10, 0.9)";
 const PARTICLE_COLOR = "rgba(50, 255, 150, 0.8)";
@@ -16,7 +16,7 @@ interface Particle {
     speedY: number
 }
 
-const GeometricCanvas = ({children}: { children: React.ReactNode }) => {
+const GeometricCanvas = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const particles = useRef<Array<Particle>>([]);
     const mousePos = useRef({x: -1000, y: -1000});
@@ -144,13 +144,8 @@ const GeometricCanvas = ({children}: { children: React.ReactNode }) => {
         };
     }, []);
 
-    return (
-        <>
-            <canvas ref={canvasRef}
-                    className="fixed top-0 left-0 w-full h-full pointer-events-auto bg-gradient-to-b from-gray-900 to-gray-950"/>
-            <div className="pointer-events-none">{children}</div>
-        </>
-    )
+    return <canvas ref={canvasRef}
+                   className="fixed top-0 left-0 w-full h-full pointer-events-auto bg-gradient-to-b from-gray-900 to-gray-950"/>
 };
 
 export default GeometricCanvas;
