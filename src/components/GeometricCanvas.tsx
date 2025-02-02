@@ -1,7 +1,7 @@
 import {useEffect, useRef} from "react";
 
-const BG_COLOR = "rgba(10, 10, 10, 0.9)";
-const PARTICLE_COLOR = "rgba(50, 255, 150, 0.8)";
+const BG_COLOR = "rgba(23,22,22,0.9)";
+const PARTICLE_COLOR = "rgba(163,167,184,0.8)";
 const DENSITY = 0.40;
 const CONNECTION_DISTANCE = 150;
 const FADE_SPEED = 0.05;
@@ -36,8 +36,8 @@ const GeometricCanvas = () => {
 
         const createParticles = () => {
             const num_particles: number = Math.floor(
-                (canvas.width * canvas.height) *    // Canvas area in pixels²
-                (DENSITY / 10_000)             // Particles per million pixels (ppm²)
+                (canvas.width * canvas.height) *
+                (DENSITY / 10_000)
             );
             console.log(`drawing ${num_particles} particles`)
 
@@ -145,7 +145,7 @@ const GeometricCanvas = () => {
     }, []);
 
     return <canvas ref={canvasRef}
-                   className="fixed top-0 left-0 w-full h-full pointer-events-auto bg-gradient-to-b from-gray-900 to-gray-950"/>
+                   className="fixed top-0 left-0m w-full h-full pointer-events-auto bg-gradient-to-b from-gray-900 to-gray-950"/>
 };
 
 export default GeometricCanvas;

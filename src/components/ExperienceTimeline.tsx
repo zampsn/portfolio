@@ -45,7 +45,7 @@ const experiences = [
 
 const ExperienceTimeline = () => {
     return (
-        <section className="relative py-12 md:py-20 bg-zinc-950 overflow-hidden" id="experience">
+        <section className="relative py-12 md:py-20 bg-zinc-950/10 backdrop-blur-lg overflow-hidden" id="experience">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.h2
                     initial={{opacity: 0, y: 20}}
@@ -81,10 +81,10 @@ const ExperienceTimeline = () => {
                                 {/* Card content */}
                                 <div className="relative md:ml-14 pt-14 md:pt-0 w-full">
                                     <div
-                                        className="p-6 bg-gray-900/30 backdrop-blur-sm rounded-xl border border-gray-800/50 shadow-xl hover:border-gray-700/80 transition-all">
+                                        className="p-6 bg-transparent backdrop-blur-sm rounded-xl border border-gray-800/50 shadow-xl transition-all">
                                         {/* Header */}
                                         <div className="mb-4">
-                                            <p className="text-blue-400/80 font-mono text-xs mb-1">
+                                            <p className="text-sky-400 font-mono text-xs mb-1">
                                                 {exp.date}
                                             </p>
                                             <h3 className="text-lg font-semibold text-gray-100">

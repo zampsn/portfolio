@@ -26,7 +26,7 @@ const Navbar = () => {
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: visible ? 1 : 0, y: visible ? 0 : -20}}
                 transition={{duration: 0.3}}
-                className="fixed top-4 left-1/2 -translate-x-1/2 z-20 flex space-x-4 bg-gray-900/80 backdrop-blur-md px-6 py-2 rounded-full border border-gray-700/50 shadow-lg"
+                className="fixed top-4 left-1/2 -translate-x-1/2 z-20 flex space-x-4 bg-zinc-950/10 backdrop-blur-md px-6 py-2 rounded-full border border-gray-700/50 shadow-lg"
             >
                 <Link
                     to="home"

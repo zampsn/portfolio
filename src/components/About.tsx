@@ -4,7 +4,7 @@ const SKILLS = ['Kubernetes', 'Cloud Infrastructure', 'CI/CD Systems', 'Cybersec
 
 const AboutSection = () => {
     return (
-        <section className="relative py-16 md:py-24 bg-zinc-950 overflow-hidden" id="about">
+        <section className="relative py-16 md:py-24 bg-zinc-950/10 backdrop-blur-sm overflow-hidden" id="about">
             <div className="container mx-auto px-6 sm:px-8 lg:px-10">
                 <motion.h2
                     initial={{opacity: 0, y: 20}}
@@ -17,10 +17,10 @@ const AboutSection = () => {
 
                 <div className="max-w-4xl mx-auto">
                     <div
-                        className="p-6 sm:p-8 bg-gray-900/30 backdrop-blur-md rounded-xl border border-gray-800/50 shadow-lg hover:border-gray-700/80 transition-all">
+                        className="p-6 sm:p-8 bg-transparent rounded-xl border border-gray-800/50 shadow-lg transition-all">
                         <div className="space-y-6">
               <span className="text-gray-300/90 text-lg sm:text-xl font-bold leading-relaxed font-mono">
-                {"Hi, I'm Zach! "}
+                Hi, I'm Zach!
               </span>
                             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                                 I've always had a deep curiosity about how things work. From taking apart gadgets in my
@@ -39,7 +39,7 @@ const AboutSection = () => {
                                 transition={{delay: 0.2}}
                                 className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gray-800/50"
                             >
-                                <h3 className="text-blue-400/80 font-mono mb-3 sm:mb-4 text-base sm:text-lg">Core
+                                <h3 className="text-sky-400 font-mono mb-3 sm:mb-4 text-base sm:text-lg">Core
                                     Competencies</h3>
                                 <div className="flex flex-wrap gap-2 sm:gap-3">
                                     {SKILLS.map((skill, i) => (
@@ -48,7 +48,7 @@ const AboutSection = () => {
                                             initial={{opacity: 0, scale: 0.9}}
                                             whileInView={{opacity: 1, scale: 1}}
                                             transition={{delay: i * 0.05}}
-                                            className="px-3 py-1 text-xs sm:text-sm font-mono bg-gray-800/40 text-gray-300 rounded-full border border-gray-700/60"
+                                            className="px-3 py-1 text-xs sm:text-sm font-mono bg-transparent text-gray-300 rounded-full border border-gray-700/60"
                                         >
                                             {skill}
                                         </motion.div>

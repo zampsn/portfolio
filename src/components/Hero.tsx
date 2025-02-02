@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className="relative min-h-screen overflow-hidden" id="home">
             <div className="relative flex flex-col items-center justify-center h-screen text-center px-4 z-10">
-                <div className="backdrop-blur-sm bg-gray-900/10 p-8 shadow-2xl min-w-full">
+                <div className="backdrop-blur-sm bg-zinc-900/10 p-8 shadow-2xl min-w-full">
                     <motion.h1
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
