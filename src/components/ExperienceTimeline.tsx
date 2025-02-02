@@ -13,7 +13,7 @@ const experiences = [
             "Played a key role in a cross-functional initiative to create a centralized secret management solution using HashiCorp Vault.",
             "Contributed to the engineering of a Docker base image pipeline with automated publishing and regular security scans."
         ],
-        icon: <Cloud className="w-6 h-6 text-teal-400"/>,
+        icon: <Cloud className="w-6 h-6 text-emerald-400"/>,
         skills: ["Kubernetes", "AWS", "Terraform", "Typescript"]
     },
     {
@@ -27,7 +27,7 @@ const experiences = [
             "Assisted in the development of back-end services related to customer and license management.",
             "Collaborated with cross-functional teams, including QA and Embedded Systems, to ensure reliability and high performance of cloud-based solutions"
         ],
-        icon: <Server className="w-6 h-6 text-blue-400"/>,
+        icon: <Server className="w-6 h-6 text-indigo-400"/>,
         skills: ["Go", "MariaDB", "Docker", "OpenAPI"]
     },
     {
@@ -38,7 +38,7 @@ const experiences = [
             "Proven ability to work effectively in fast-paced environments, enhancing adaptability and time management capabilities.",
             "Consistently surpassed performance targets through exceptional service and problem-solving abilities."
         ],
-        icon: <MessageCircle className="w-6 h-6 text-indigo-400"/>,
+        icon: <MessageCircle className="w-6 h-6 text-rose-400"/>,
         skills: ["Problem Solving", "Customer Relations", "Conflict Resolution"]
     }
 ];
@@ -51,7 +51,7 @@ const ExperienceTimeline = () => {
                     initial={{opacity: 0, y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 0.6}}
-                    className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-blue-400"
+                    className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-gray-400"
                 >
                     Professional Journey
                 </motion.h2>
@@ -73,8 +73,8 @@ const ExperienceTimeline = () => {
                             >
                                 {/* Timeline icon */}
                                 <div
-                                    className="absolute left-1/2 -translate-x-1/2 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 border-2 border-gray-700/50 shadow-lg text-gray-200 md:left-0 md:-translate-x-1/2">
-                                    {React.cloneElement(exp.icon, {className: "w-5 h-5"})}
+                                    className="absolute left-1/2 -translate-x-1/2 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-gray-900 border-2 border-gray-700/50 shadow-lg md:left-0 md:-translate-x-1/2">
+                                    {React.cloneElement(exp.icon)}
                                 </div>
 
 
@@ -84,7 +84,7 @@ const ExperienceTimeline = () => {
                                         className="p-6 bg-transparent backdrop-blur-sm rounded-xl border border-gray-800/50 shadow-xl transition-all">
                                         {/* Header */}
                                         <div className="mb-4">
-                                            <p className="text-sky-400 font-mono text-xs mb-1">
+                                            <p className="text-blue-400 font-mono text-xs mb-1">
                                                 {exp.date}
                                             </p>
                                             <h3 className="text-lg font-semibold text-gray-100">
@@ -102,7 +102,7 @@ const ExperienceTimeline = () => {
                                             {exp.description.map((item, i) => (
                                                 <li key={i} className="relative pl-4">
                                                     <div
-                                                        className="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-blue-400/30"/>
+                                                        className="absolute left-0 top-2 w-1.5 h-1.5 rounded-full bg-blue-400/60"/>
                                                     {item}
                                                 </li>
                                             ))}

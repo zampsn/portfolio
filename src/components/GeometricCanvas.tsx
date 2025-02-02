@@ -1,19 +1,26 @@
 import {useEffect, useRef} from "react";
 
-const BG_COLOR = "rgba(23,22,22,0.9)";
-const PARTICLE_COLOR = "rgba(163,167,184,0.8)";
+const BG_COLOR = "rgb(14,20,32)";
+const PARTICLE_COLOR = "rgba(229,231,235,0.8)"; // text-gray-200
+const COLOR_PALETTE = [
+    "rgba(245,158,11,0.9)",     // amber-500
+    "rgba(52,211,153,0.9)",     // emerald-400
+    "rgba(129,140,248,0.9)",    // indigo-400
+    "rgba(251,113,133,0.9)"     // rose-400
+];
 const DENSITY = 0.40;
 const CONNECTION_DISTANCE = 150;
 const FADE_SPEED = 0.05;
 const HOVER_RADIUS = 60;
-const PARTICLE_SPEED_MULTIPLIER = 0.5
+const PARTICLE_SPEED_MULTIPLIER = 0.5;
 
 interface Particle {
     x: number;
     y: number;
     size: number;
     speedX: number;
-    speedY: number
+    speedY: number;
+    color: string;
 }
 
 const GeometricCanvas = () => {
@@ -39,14 +46,14 @@ const GeometricCanvas = () => {
                 (canvas.width * canvas.height) *
                 (DENSITY / 10_000)
             );
-            console.log(`drawing ${num_particles} particles`)
 
             particles.current = Array.from({length: num_particles}, () => ({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
                 size: Math.random() * 2 + 1,
                 speedX: (Math.random() - 0.5) * PARTICLE_SPEED_MULTIPLIER,
-                speedY: (Math.random() - 0.5) * PARTICLE_SPEED_MULTIPLIER
+                speedY: (Math.random() - 0.5) * PARTICLE_SPEED_MULTIPLIER,
+                color: COLOR_PALETTE[Math.floor(Math.random() * COLOR_PALETTE.length)]
             }));
         };
 
@@ -82,14 +89,13 @@ const GeometricCanvas = () => {
 
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                ctx.fillStyle = PARTICLE_COLOR;
+                ctx.fillStyle = p === hoveredParticle.current ? p.color : PARTICLE_COLOR;
                 ctx.fill();
             });
         };
 
         const drawConnections = () => {
             const currentHover = findHoveredParticle();
-            // Update hover state and opacity
             if (currentHover) {
                 hoveredParticle.current = currentHover;
                 connectionOpacity.current = Math.min(connectionOpacity.current + FADE_SPEED, 1);
@@ -98,7 +104,6 @@ const GeometricCanvas = () => {
             }
 
             if (connectionOpacity.current > 0.01 && hoveredParticle.current) {
-                ctx.strokeStyle = `rgba(0, 255, 255, ${0.5 * connectionOpacity.current})`;
                 ctx.lineWidth = 0.5;
 
                 particles.current.forEach(p => {
@@ -108,6 +113,17 @@ const GeometricCanvas = () => {
                     const distance = Math.sqrt(dx * dx + dy * dy);
 
                     if (distance < CONNECTION_DISTANCE) {
+                        // Create gradient between particles
+                        const gradient = ctx.createLinearGradient(
+                            hoveredParticle.current.x,
+                            hoveredParticle.current.y,
+                            p.x,
+                            p.y
+                        );
+                        gradient.addColorStop(0, hoveredParticle.current.color);
+                        gradient.addColorStop(1, p === hoveredParticle.current ? p.color : PARTICLE_COLOR);
+
+                        ctx.strokeStyle = gradient;
                         ctx.beginPath();
                         ctx.moveTo(hoveredParticle.current.x, hoveredParticle.current.y);
                         ctx.lineTo(p.x, p.y);
@@ -145,7 +161,7 @@ const GeometricCanvas = () => {
     }, []);
 
     return <canvas ref={canvasRef}
-                   className="fixed top-0 left-0m w-full h-full pointer-events-auto bg-gradient-to-b from-gray-900 to-gray-950"/>
+                   className="fixed top-0 left-0 w-full h-full pointer-events-auto bg-black"/>;
 };
 
 export default GeometricCanvas;
