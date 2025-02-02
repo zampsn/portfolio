@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 import {Link} from "react-scroll";
-import {FaHome, FaUser, FaBriefcase} from "react-icons/fa";
+import {House, User, BriefcaseBusiness} from "lucide-react"
 
 const Navbar = () => {
     const [visible, setVisible] = useState(true);
@@ -34,7 +34,7 @@ const Navbar = () => {
                     duration={500}
                     className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
                 >
-                    <FaHome/>
+                    <House/>
                     <span className="hidden md:inline">Home</span>
                 </Link>
                 <Link
@@ -43,7 +43,7 @@ const Navbar = () => {
                     duration={500}
                     className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
                 >
-                    <FaUser/>
+                    <User/>
                     <span className="hidden md:inline">About</span>
                 </Link>
                 <Link
@@ -52,7 +52,7 @@ const Navbar = () => {
                     duration={500}
                     className="flex items-center space-x-2 text-gray-200 hover:text-green-400 transition cursor-pointer"
                 >
-                    <FaBriefcase/>
+                    <BriefcaseBusiness/>
                     <span className="hidden md:inline">Experience</span>
                 </Link>
             </motion.nav>

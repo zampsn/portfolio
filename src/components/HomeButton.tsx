@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import {Link} from "react-scroll";
-import {FaArrowUp} from "react-icons/fa";
+import {ArrowUp} from "lucide-react";
 
 const HomeButton = () => {
     const [isAtBottom, setIsAtBottom] = useState(false);
@@ -26,7 +26,7 @@ const HomeButton = () => {
                 isAtBottom ? "opacity-100" : "opacity-0 pointer-events-none"
             }`}
         >
-            <FaArrowUp/>
+            <ArrowUp/>
         </Link>
     );
 };
