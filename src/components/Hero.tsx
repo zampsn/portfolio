@@ -51,16 +51,19 @@ const Hero = () => {
                         sequence={[
                             '// Automating all the things', 2000,
                             '// Reducing risk through automation', 2000,
-                            '// Securing all the things', 2000,
+                            '// Securing all the things (properly)', 2000,
+                            '// Building guardrails, not roadblocks', 2000,
+                            '// Automating myself out of a job (eventually)', 2000,
                             '// sudo rm -rf /', 2000,
                             '// Securing infrastructure from the ground up', 2000,
                             '// Hunting IAM misconfigurations', 2000,
                             '// Bridging the gap between security and development', 2000,
                             '// Automating your job', 2000,
-                            '// Stealing your IP address... just kidding 😜', 2000,
+                            '// Stealing your IP address... just kidding :)', 2000,
                             '// Building trust with end-to-end security solutions', 2000,
-                            '// Who broke the build? 🧐', 2000,
+                            '// Who broke the build? :(', 2000,
                             '// Empowering teams with security-focused development', 2000,
+                            '// Building systems people actually trust', 2000,
                         ]}
                         wrapper="span"
                         speed={50}

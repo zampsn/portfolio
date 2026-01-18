@@ -5,16 +5,17 @@ import React from "react";
 const experiences = [
     {
         title: "Software Developer",
-        company: "ResMed",
+        company: "Resmed",
         team: "Platform Engineering, Security",
         date: "2024 - Present",
         location: "Halifax, NS",
         description: [
-            "Played a key role in a cross-functional initiative to create a centralized secret management solution using HashiCorp Vault.",
-            "Contributed to the engineering of a Docker base image pipeline with automated publishing and regular security scans."
+            "Owned, designed, and maintained Gandalf, a shift-left security initiative to proactively detect and block vulnerabilities before they reach production.",
+            "Played a key role in delivering a centralized secrets management platform using HashiCorp Vault, improving credential security and operational consistency across teams.",
+            "Contributed to the development of a Docker hardened base image pipeline featuring automated publishing and continuous security scanning to reduce supply-chain risk."
         ],
         icon: <Cloud className="w-6 h-6 text-emerald-400"/>,
-        skills: ["Kubernetes", "AWS", "Terraform", "Typescript"]
+        skills: ["Typescript", "CI/CD", "HCP Vault", "Terraform", "Cybersecurity"]
     },
     {
         title: "Junior Software Developer",
@@ -23,9 +24,9 @@ const experiences = [
         date: "2022 - 2024",
         location: "Halifax, NS",
         description: [
-            "Contributed to the back-end infrastructures of IoT management systems for network security devices.",
-            "Assisted in the development of back-end services related to customer and license management.",
-            "Collaborated with cross-functional teams, including QA and Embedded Systems, to ensure reliability and high performance of cloud-based solutions"
+            "Contributed to the design and development of back-end infrastructure supporting IoT management systems for network security devices.",
+            "Built and enhanced back-end services for customer and license management, improving reliability and supporting business-critical workflows.",
+            "Worked closely with QA and Embedded Systems partners to ensure the reliability, performance, and scalability of cloud-based solutions."
         ],
         icon: <Server className="w-6 h-6 text-indigo-400"/>,
         skills: ["Go", "MariaDB", "Docker", "OpenAPI"]
@@ -34,9 +35,9 @@ const experiences = [
         title: "Various Customer Service Roles",
         date: "2016 - 2022",
         description: [
-            "Demonstrated strong communication and interpersonal skills in diverse customer service settings.",
-            "Proven ability to work effectively in fast-paced environments, enhancing adaptability and time management capabilities.",
-            "Consistently surpassed performance targets through exceptional service and problem-solving abilities."
+            "Delivered clear, professional communication across diverse customer interactions, building rapport and resolving issues efficiently.",
+            "Thrived in fast-paced environments by adapting quickly to changing priorities while maintaining strong time management and focus.",
+            "Consistently exceeded performance targets through high-quality service, effective problem-solving, and attention to customer needs."
         ],
         icon: <MessageCircle className="w-6 h-6 text-rose-400"/>,
         skills: ["Problem Solving", "Customer Relations", "Conflict Resolution"]

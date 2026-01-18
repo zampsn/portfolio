@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
-import {Terminal, Code2, Lock} from "lucide-react";
+import {Code2, Lock, Terminal} from "lucide-react";
 
-const SKILLS = ['Kubernetes', 'Cloud Infrastructure', 'CI/CD Systems', 'Cybersecurity', 'Developer Experience'];
+const SKILLS = ['Cybersecurity', 'Developer Experience', 'CI/CD Automation', 'System Design'];
 
 const AboutSection = () => {
     return (
@@ -43,14 +43,15 @@ const AboutSection = () => {
                                 Hi, I'm Zach!
                             </span>
                             <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-                                I've always had a deep curiosity about how things work. From taking apart gadgets in my
-                                childhood to exploring robotics and RC vehicles, my passion naturally led me to
-                                programming.
+                                I’ve always been driven by curiosity about how things work. From taking apart gadgets as
+                                a kid to experimenting with robotics and RC vehicles, that curiosity naturally evolved
+                                into a passion for programming.
                                 <br/><br/>
-                                As a self-taught developer with over three years of professional development experience,
-                                I specialize in platform engineering—building secure, scalable infrastructure that
-                                balances speed with security. My focus is on creating maintainable, resilient systems
-                                that empower developers without compromising safety.
+                                I’m a self-taught developer with over three years of professional experience,
+                                specializing in platform engineering. I design and build secure, scalable infrastructure
+                                that balances developer velocity with strong security guarantees. My work focuses on
+                                creating maintainable, resilient systems that empower teams to ship confidently without
+                                compromising safety.
                             </p>
 
                             <motion.div
