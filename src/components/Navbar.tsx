@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 import {Link} from "react-scroll";
-import {House, User, BriefcaseBusiness} from "lucide-react"
+import {House, User, BriefcaseBusiness, Download} from "lucide-react"
 
 const Navbar = () => {
     const [visible, setVisible] = useState(true);
@@ -55,6 +55,14 @@ const Navbar = () => {
                     <BriefcaseBusiness/>
                     <span className="hidden md:inline">Experience</span>
                 </Link>
+                <a
+                    href="/Zach_Sampson_Resume.pdf"
+                    download
+                    className="flex items-center space-x-2 text-gray-200 hover:text-blue-400 transition cursor-pointer rounded-full border border-gray-600/60 hover:border-blue-400 px-3 py-1.5"
+                >
+                    <Download size={16} />
+                    <span className="hidden md:inline">Resume</span>
+                </a>
             </motion.nav>
         </>
     );
